@@ -1,0 +1,15 @@
+services:
+  web:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    container_name: love_chinu
+    volumes:
+      - ./:/usr/src/app:cached
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+      - TAILWIND_DISABLE_OXIDE=true
+    tty: true

@@ -1,0 +1,11 @@
+.vsscode/
+
+node_modules/
+package-lock.json
+
+.git/
+.gitignore
+.gitattributes
+
+Plan.md
+TODO.md

@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ちーぬちゃんファンサイトプロジェクト
 
-## Getting Started
+## 概要
+- **どういったものか**: 友達の配信者(ちーぬちゃん)の魅力を伝えるためのファンサイト
+ちーぬちゃん各種SNSリンク
+- [Twitter](https://x.com/dahukokko_H)
+- [YouTube](https://www.youtube.com/@chinu_ch)
+- [Twitch](https://www.twitch.tv/chinuchaaaaan)
 
-First, run the development server:
+## 技術スタック
+### 主な使用技術
+- **GitHub**: ソースコード管理
+- **Docker**: 開発環境のコンテナ化
+- **TypeScript**: 型で保守的な開発
+- **Vercel**: デプロイ
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### フレームワーク・ライブラリ
+- **Next.js**: Reactの追加フレームワーク。フルスタック向けだが練習もこめて
+- **UIライブラリ**
+  - Chakra UI
+  - Tailwind CSS
+  - Anime.js
+- **コードフォーマッター**
+  - ESLint
+  - Prettier
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## サイトの構想（ページ例・機能）
+### 基本ページ構成
+- **ホーム**
+  - 立ち絵、自己紹介、スケジュールを表示
+- **プロフィール**
+  - 立ち絵、自己紹介、配信歴、活動内容など詳しく
+- **配信スケジュール**
+  - 次回以降の配信予定をカレンダー形式で表示
+- **アーカイブ／過去の写真**
+  - Video、Photoに分けてYouTubeの過去の配信とTwitterの投稿写真を掲載

@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #ff6b9d;
+  --secondary: #9c59b6;
+  --accent: #3498db;
+  --background: #fdf2f8;
+  --foreground: #1a202c;
+}
+
+@layer base {
+  body {
+    @apply text-foreground bg-background;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 bg-pink-500 text-white rounded-md hover:bg-pink-600 transition-colors duration-300;
+  }
+
+  .btn-secondary {
+    @apply px-4 py-2 bg-purple-500 text-white rounded-md hover:bg-purple-600 transition-colors duration-300;
+  }
+
+  .card {
+    @apply bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300;
+  }
+
+  .section-title {
+    @apply text-3xl font-bold text-pink-600 mb-6 relative;
+  }
+
+  .section-title::after {
+    content: "";
+    @apply absolute bottom-0 left-0 w-16 h-1 bg-pink-400 rounded;
+  }
+
+  .hero-section {
+    @apply relative rounded-xl overflow-hidden;
+    position: relative;
+  }
+
+  .hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("/background.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.15;
+    z-index: 0;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.twitter-timeline {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+

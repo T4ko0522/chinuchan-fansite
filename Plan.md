@@ -30,6 +30,6 @@
   - GitHub ActionsでESLint、Prettier、テストの自動化を実施
   - Vercelのプレビュー環境を活用し、デプロイ時の確認を容易にする
 - **UI/デザインの一貫性**
-  - Chakra UIとTailwind CSSの使い分けルールの策定
+  - Tailwind CSSの使い分けルールの策定
 - **Docker環境の整備**
   - Next.jsプロジェクトのDocker化を進め、ローカル開発環境を統一

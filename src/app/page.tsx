@@ -35,7 +35,9 @@ export default function Home() {
           <h1 className="text-4xl md:text-5xl font-bold text-pink-600 animate-item">ふぁんさいとへようこそ！</h1>
           <p className="text-lg text-gray-700 animate-item">
             見るエナドリ系Vtuberのちーぬちゃん!!! <br />
-            ⚠️ちーぬちゃんの<strong className="text-pink-600">非公式</strong>ファンサイトです。
+            ⚠️ちーぬちゃんの<strong className="text-pink-600">非公式</strong>ファンサイトです。<br />
+            このページは<strong className="text-pink-600">開発中です。</strong>現在バックエンドは出来ていません。<br />
+            タコの画像は<strong className="text-pink-600">仮の画像です。</strong>画像の用意が出来次第置き換えます。
           </p>
           <div className="flex flex-wrap gap-4 animate-item">
             <Link href="/profile" className="btn-primary rounded-full flex items-center gap-2">

@@ -42,7 +42,7 @@ export default function Navbar() {
               <div className="relative w-8 h-8 rounded-full overflow-hidden bg-white">
                 <Image src="/logo.png" alt="ちーぬちゃんロゴ" fill className="object-contain" />
               </div>
-              <span className="font-bold text-xl text-pink-600">ちーぬちゃんのふぁんさいと！</span>
+              <span className="font-bold text-xl text-pink-600">ちーぬちゃんふぁんさいと！</span>
             </Link>
           </div>
 
@@ -53,9 +53,10 @@ export default function Navbar() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-pink-600 hover:bg-pink-50 transition-colors duration-300"
+                  className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-pink-600 relative group transition-colors duration-300"
                 >
                   {item.name}
+                  <span className="absolute bottom-0 left-0 w-full h-0.5 bg-pink-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
                 </Link>
               ))}
               <a
@@ -91,14 +92,15 @@ export default function Navbar() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-pink-600 hover:bg-pink-50"
+                className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-pink-600 relative group"
                 onClick={() => setIsOpen(false)}
               >
                 {item.name}
+                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-pink-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
               </Link>
             ))}
             <a
-              href="https://www.youtube.com/@example"
+              href="https://www.youtube.com/@chinu_ch"
               target="_blank"
               rel="noopener noreferrer"
               className="block px-3 py-2 rounded-full text-base font-medium text-white bg-pink-600 hover:bg-pink-700"
@@ -112,4 +114,3 @@ export default function Navbar() {
     </nav>
   )
 }
-

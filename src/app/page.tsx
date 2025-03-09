@@ -25,12 +25,13 @@ export default function Home() {
 
   return (
     <div className="space-y-16">
-      {/* Hero Section */}
-      <section className="hero-section flex flex-col-reverse md:flex-row items-center justify-between gap-8 py-10">
+      <section className="flex flex-col-reverse md:flex-row items-center justify-between gap-8 py-10 relative rounded-xl overflow-hidden">
         {/* 背景画像 */}
-        <div className="hero-bg"></div>
+        <div className="hero-bg" style={{ backgroundImage: 'url("/background.png")' }}></div>
+        {/* オーバーレイ */}
+        <div className="hero-overlay"></div>
 
-        <div className="md:w-1/2 space-y-6 hero-content" ref={animationRef}>
+        <div className="md:w-1/2 space-y-6 relative z-10" ref={animationRef}>
           <h1 className="text-4xl md:text-5xl font-bold text-pink-600 animate-item">ふぁんさいとへようこそ！</h1>
           <p className="text-lg text-gray-700 animate-item">
             見るエナドリ系Vtuberのちーぬちゃん!!! <br />
@@ -47,7 +48,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className="md:w-1/2 flex justify-center animate-float hero-content">
+        <div className="md:w-1/2 flex justify-center animate-float relative z-10">
           <div className="relative w-64 h-64 md:w-80 md:h-80">
             <Image src="/temp.png" alt="ちーぬちゃん立ち絵" fill className="object-contain" priority />
           </div>
@@ -68,8 +69,16 @@ export default function Home() {
             ></iframe>
           </div>
           <div className="mt-4">
-            <h3 className="text-xl font-semibold text-gray-800">【雑談】今日の出来事とゲーム実況</h3>
-            <p className="text-gray-600 mt-2">今日あった面白い出来事と、新しいゲームの実況プレイをお届けします！</p>
+            <h3 className="text-xl font-semibold text-gray-800">
+              【シリーズ未履修だから色々教えてほしいLimbus Company実況配信その１
+            </h3>
+            <p className="text-gray-600 mt-2">
+              ロボトミーコーポレーションみたいなやつはかなり昔にちょこっとやったけど
+              <br />
+              ストーリースキップしちゃった記憶。。。(;o;)
+              <br />
+              ...
+            </p>
             <Link href="/archive" className="inline-flex items-center mt-4 text-pink-600 hover:text-pink-700">
               <Video size={18} className="mr-2" />
               もっと見る

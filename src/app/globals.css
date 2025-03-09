@@ -38,27 +38,19 @@
     @apply absolute bottom-0 left-0 w-16 h-1 bg-pink-400 rounded;
   }
 
-  .hero-section {
-    @apply relative rounded-xl overflow-hidden;
-    position: relative;
-  }
-
   .hero-bg {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url("/background.png");
+    inset: 0;
+    z-index: 0;
     background-size: cover;
     background-position: center;
-    opacity: 0.15;
-    z-index: 0;
   }
 
-  .hero-content {
-    position: relative;
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
     z-index: 1;
+    background: linear-gradient(to right, rgba(253, 242, 248, 0.9), rgba(243, 232, 255, 0.9));
   }
 }
 

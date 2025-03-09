@@ -10,13 +10,13 @@ import LoadingScreen from "../components/LoadingScreen"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "ちーぬちゃんファンサイト",
+  title: "ちーぬちゃんふぁんさいと！",
   description: "ちーぬちゃんの魅力を伝えるファンサイト",
   openGraph: {
     title: "ちーぬちゃんファンサイト",
-    description: "ちーぬちゃんの魅力を伝えるファンサイト",
+    description: "ちーぬちゃんの魅力を伝えるファンサイトです",
     url: "https://chinu-chan.vercel.app",
-    siteName: "ちーぬちゃんファンサイト",
+    siteName: "ちーぬちゃんふぁんさいと！",
     locale: "ja_JP",
     type: "website",
   },

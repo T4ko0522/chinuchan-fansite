@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "ちーぬちゃんファンサイト",
     description: "ちーぬちゃんの魅力を伝えるファンサイトです",
-    url: "https://chinu-chan.vercel.app",
+    url: "https://chinuchan.vercel.app",
     siteName: "ちーぬちゃんふぁんさいと！",
     locale: "ja_JP",
     type: "website",

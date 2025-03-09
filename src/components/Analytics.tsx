@@ -2,7 +2,7 @@
 
 import { usePathname, useSearchParams } from "next/navigation"
 import Script from "next/script"
-import { useEffect } from "react"
+import { useEffect, Suspense } from "react"
 
 // Google Analytics の gtag 関数の型定義
 declare global {
@@ -12,7 +12,7 @@ declare global {
   }
 }
 
-export function Analytics() {
+function AnalyticsContent() {
   const pathname = usePathname()
   const searchParams = useSearchParams()
 
@@ -45,3 +45,10 @@ export function Analytics() {
   )
 }
 
+export function Analytics() {
+  return (
+    <Suspense fallback={null}>
+      <AnalyticsContent />
+    </Suspense>
+  )
+}

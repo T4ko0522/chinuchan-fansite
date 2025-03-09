@@ -27,9 +27,10 @@ export default function Home() {
     <div className="space-y-16">
       <section className="flex flex-col-reverse md:flex-row items-center justify-between gap-8 py-10 relative rounded-xl overflow-hidden">
         {/* 背景画像 */}
-        <div className="hero-bg" style={{ backgroundImage: 'url("/background.png")' }}></div>
+        {/* 権利的な問題で削除；； */}
+        {/* <div className="hero-bg" style={{ backgroundImage: 'url("/background.png")' }}></div> */}
         {/* オーバーレイ */}
-        <div className="hero-overlay"></div>
+        {/* <div className="hero-overlay"></div> */}
 
         <div className="md:w-1/2 space-y-6 relative z-10" ref={animationRef}>
           <h1 className="text-4xl md:text-5xl font-bold text-pink-600 animate-item">ふぁんさいとへようこそ！</h1>

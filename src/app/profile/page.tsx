@@ -30,7 +30,7 @@ export default function ProfilePage() {
           </div>
         </div>
         <div className="md:w-2/3 space-y-6 animate-item">
-          <h1 className="text-4xl font-bold text-pink-600">ちーぬちゃん</h1>
+          <h1 className="text-4xl font-bold text-pink-600">ちーぬちゃん（画像は仮！！！）</h1>
           <div className="flex flex-wrap gap-3">
             <span className="px-3 py-1 bg-pink-100 text-pink-800 rounded-full text-sm">ゲーム実況</span>
             <span className="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">雑談</span>
@@ -156,7 +156,7 @@ export default function ProfilePage() {
         <div className="card p-8">
           <p className="text-lg text-gray-700 italic">
             （もしちーぬちゃんからメッセージをもらえたらそれを入れる場所。。。）<br />
-            「こんちーぬ！」
+            「こんちーぬー！！！！（仮）」
           </p>
           <p className="text-right font-semibold text-pink-600 mt-4">- ちーぬちゃん</p>
         </div>

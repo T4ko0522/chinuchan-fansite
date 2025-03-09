@@ -91,7 +91,10 @@ export default function Home() {
 
       {/* Schedule Preview */}
       <section className="py-10">
-        <h2 className="section-title">今後の配信予定</h2>
+        <h2 className="section-title">
+          今後の配信予定<br />
+          (バックエンドがまだなのでダミーデータ)
+          </h2>
         <SchedulePreview />
         <div className="text-center mt-8">
           <Link href="/schedule" className="btn-primary rounded-full inline-flex items-center">

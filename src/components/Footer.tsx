@@ -18,7 +18,7 @@ export default function Footer() {
               </p>
           </div>
 
-          <div className="flex flex-col md:flex-row gap-6 md:gap-12">
+          <div className="flex flex-row gap-6 md:gap-12 w-full justify-around md:justify-end">
             <div>
               <h3 className="font-semibold text-gray-800 mb-3">リンク</h3>
               <ul className="space-y-2">
@@ -91,7 +91,7 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} ちーぬちゃんふぁんさいと！ All rights reserved.
             </p>
           <p className="text-gray-500 text-xs mt-2 flex items-center justify-center">
-            Maid with <Heart size={12} className="text-pink-500 mx-1" /> by{" "}
+            Made with <Heart size={12} className="text-pink-500 mx-1" /> by{" "}
             <a
               href="https://x.com/T4ko_VRC"
               target="_blank"
